@@ -1,0 +1,31 @@
+// @import '../../styles/skdf-colors';
+
+:root {
+  --menu-width: 21rem;
+}
+
+.menu {
+  background-color: white;
+  --sidebar-subbar-width: 16.4375rem;
+  position: fixed;
+  height: 100vh;
+  z-index: 2;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+  box-shadow: 2px 0 4px rgba(108, 133, 159, 0.12), 4px 0 8px rgba(108, 133, 159, 0.12);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.children {
+  margin-left: var(--menu-width);
+  height: 100vh;
+  overflow-x: auto;
+}
+
+@media print {
+  .children {
+    overflow-x: visible;
+  }
+}

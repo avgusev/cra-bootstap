@@ -1,0 +1,115 @@
+$gradient-liner: linear-gradient(
+    9.74deg,
+    rgba(98, 135, 194, 0) 36.28%,
+    rgba(98, 135, 194, 0.1) 51.01%,
+    rgba(0, 0, 0, 0.1) 77.98%
+  ),
+  linear-gradient(0deg, rgba(135, 182, 255, 0.153) 27.51%, rgba(58, 111, 199, 0.3) 72.08%),
+  linear-gradient(0deg, rgba(186, 205, 234, 0) -10.33%, rgba(0, 41, 104, 0.3) 78.68%),
+  linear-gradient(
+    0deg,
+    rgba(186, 205, 234, 0) 18.85%,
+    rgba(46, 88, 153, 0.487127) 66.41%,
+    rgba(47, 89, 156, 0.55) 112.49%
+  );
+
+.searchMapBlock,
+.searchMapBlock::before,
+.searchMapGradient {
+  height: 22rem; // 37.5rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // padding-top: 4rem; //7rem;
+  top: 0;
+  @media (max-width: 992px) {
+    height: 20rem; //29.75rem;
+    padding: 2.25rem 0 1rem; //4.25rem 0 1rem;
+  }
+}
+.searchMapBlock {
+  color: white;
+  position: relative;
+  background-image: url('./assets/map/map.webp'), url('./assets/map/scheme.webp');
+  &::before {
+    content: '';
+    position: absolute;
+    animation: changeBg 40s infinite;
+  }
+}
+.searchMapGradient {
+  background-image: $gradient-liner;
+  position: absolute;
+}
+
+@keyframes changeBg {
+  92%,
+  100%,
+  0%,
+  8% {
+    background-image: url('./assets/map/payroads.svg');
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  12%,
+  28% {
+    background-image: url('./assets/map/bridges.svg');
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  32%,
+  48% {
+    background-image: url('./assets/map/mail.svg');
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  52%,
+  68% {
+    background-image: url('./assets/map/warning.webp');
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  72%,
+  88% {
+    background-image: url('./assets/map/work.webp');
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+.cardServices {
+  box-shadow: 0px 0px 16px 2px rgba(65, 120, 208, 0.1), 0px 12px 24px 2px rgba(65, 120, 208, 0.08);
+  border-radius: 0.75rem;
+}
+
+.cardCapabilities {
+  background: #f2f2f3;
+  border-radius: 0.75rem;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -7.5rem;
+}
+
+.lineRounded {
+  & div:last-child {
+    border-radius: 0.125rem 0 0 0.125rem;
+  }
+  & div:first-child {
+    border-radius: 0 0.125rem 0.125rem 0;
+  }
+}

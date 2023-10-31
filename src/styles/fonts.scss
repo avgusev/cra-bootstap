@@ -1,0 +1,67 @@
+/* swap — сразу же отрисовывается запасной шрифт, после загрузки шрифта — повторный рендеринг*/
+/* Браузер сначала попробует найти шрифт локально */
+/* Если не получилось, загрузит ttf */
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Noto Sans'), url('../assets/fonts/NotoSans-SemiBoldItalic.ttf') format('truetype');
+}

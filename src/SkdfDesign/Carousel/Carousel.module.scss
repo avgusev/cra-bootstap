@@ -1,0 +1,46 @@
+@import 'src/styles/skdf-colors';
+
+.slide {
+  height: 27.5rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  overflow: auto;
+  padding: 0 1.5rem;
+  margin-top: 1.25rem;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &Center {
+    justify-content: center;
+  }
+
+  .thumb {
+    border: 0.125rem solid $skdf-color-white;
+    border-radius: 0.25rem;
+
+    &Active {
+      border-color: $skdf-color-primary-05;
+    }
+  }
+
+  .image {
+    height: 3.875rem;
+    width: 5.125rem;
+    object-fit: cover;
+    border: 1px solid $skdf-color-white;
+    border-radius: 0.125rem;
+    cursor: pointer;
+  }
+}

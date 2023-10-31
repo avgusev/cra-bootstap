@@ -1,0 +1,46 @@
+.react-checkbox-tree {
+  .rct-collapse {
+    border: none;
+    outline: none;
+    padding: 0;
+    background: transparent;
+    min-width: 1.5rem;
+  }
+  label {
+    margin-bottom: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  li {
+    list-style-type: none;
+  }
+  ol {
+    padding: 0;
+    ol {
+      padding-left: 2rem;
+    }
+  }
+
+  .rct-text,
+  .rct-title {
+    line-height: 1.5;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  & input {
+    @extend .form-check-input;
+    flex-shrink: 0;
+    margin: 0.1875rem;
+  }
+
+  & .rct-node-icon,
+  & .rct-checkbox {
+    display: none;
+  }
+
+  .rct-collapse-btn {
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+}

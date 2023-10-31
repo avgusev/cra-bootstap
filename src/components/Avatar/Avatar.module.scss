@@ -1,0 +1,34 @@
+@import 'src/styles/skdf-colors';
+
+.avatar {
+  // border-radius: 50%;
+  background-color: $skdf-color-primary-04;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: top;
+  align-items: center;
+  text-align: center;
+
+  user-select: none;
+  color: $skdf-color-white;
+  font-weight: 700; // 700 $font-weight-bold
+
+  &.none {
+    background-image: url("data:image/svg+xml,<svg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M34.375 11.625C34.375 17.9072 29.2822 23 23 23C16.7178 23 11.625 17.9072 11.625 11.625C11.625 5.34276 16.7178 0.25 23 0.25C29.2822 0.25 34.375 5.34276 34.375 11.625Z' fill='white'/><path d='M42.5 41.0577C37.5968 36.2555 30.6811 33.2458 23 33.2458C15.3189 33.2458 8.40319 36.2555 3.5 41.0609' fill='white'/><path fill-rule='evenodd' clip-rule='evenodd' d='M1.30355 38.6522C6.82294 32.2884 14.5287 28.3835 23 28.3835C31.4713 28.3835 39.1766 32.2883 44.6957 38.6476C45.6838 39.7861 46.0147 41.5705 45.5289 43.1411C45.0432 44.7117 43.8404 45.7463 42.5001 45.7464L3.50036 45.7502C2.16019 45.7503 0.957379 44.7161 0.471368 43.1458C-0.0146432 41.5754 0.315817 39.7911 1.30355 38.6522ZM16.3605 37.5764L29.6359 37.5751C27.537 36.9135 25.3115 36.556 23 36.556C20.6871 36.556 18.4604 36.9139 16.3605 37.5764Z' fill='white'/></svg>");
+  }
+
+  & img {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+
+    &.display-none {
+      display: none;
+    }
+  }
+}
